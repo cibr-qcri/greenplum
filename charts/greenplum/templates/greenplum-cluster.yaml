@@ -1,7 +1,7 @@
 apiVersion: "greenplum.pivotal.io/v1"
 kind: "GreenplumCluster"
 metadata:
-  name: greenplum
+  name: cibr-greenplum
 spec:
   masterAndStandby:
     hostBasedAuthentication: |
