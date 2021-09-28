@@ -9,7 +9,7 @@ spec:
       host   all   all   ::0/0       trust
     memory: "800Mi"
     cpu: "0.5"
-    storageClassName: standard
+    storageClassName: managed-nfs-storage
     storage: 1000G
     workerSelector: {}
   segments:
@@ -68,12 +68,12 @@ spec:
     cpu: "0.5"
     memory: "1Gi"
     workerSelector: {}
-    storageClassName: standard
+    storageClassName: managed-nfs-storage
     storage: 100M
   zookeeper:
     replicas: 3
     cpu: "0.5"
     memory: "1Gi"
     workerSelector: {}
-    storageClassName: standard
+    storageClassName: managed-nfs-storage
     storage: 100M
